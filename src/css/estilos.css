@@ -1,0 +1,110 @@
+:root {
+    --principal: #00A3FF;
+    --fondo: #f1f1f1;
+}
+
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,
+label,
+input {
+    margin: 0;
+    padding: .3rem;
+    color: var(--fondo);
+    
+}
+.titulo{
+    font-size: 3rem;
+    font-weight: 700;
+}
+div {
+    margin: 0;
+
+}
+
+.icono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+.ajustar-icono {
+    color: var(--fondo);
+    width: 18rem;
+    height: 16rem;
+}
+
+.fondo {
+    background-color: var(--principal);
+}
+
+.contenedor {
+    background-color: var(--fondo);
+}
+
+.contenedor-todo {
+    height: 100%;
+    width: 100%;
+
+    border-radius: 0 0 25rem 0;
+}
+
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+
+.form input {
+    width: 90%;
+    height: 5rem;
+    margin: .5rem
+}
+.etiqueta{
+    font-size: 2rem;
+}
+.tama-caja{
+    border-color: var(--fondo);
+    border-radius: .7rem;
+    
+}
+.caja{
+    padding: 1rem;
+}
+
+button {
+    padding: 1.5rem 9rem;
+    border: none;
+    border-radius: 1rem;
+    background: --fondo;
+    cursor: pointer;
+    margin: 0;
+    -webkit-box-shadow: 0px 26px 17px -19px rgba(120, 120, 120, 0.8);
+    -moz-box-shadow: 0px 26px 17px -19px rgba(120, 120, 120, 0.8);
+    box-shadow: 0px 26px 17px -19px rgba(120, 120, 120, 0.8);
+
+}
+
+.boton {
+    margin-top: 3rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
