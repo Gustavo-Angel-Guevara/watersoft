@@ -15,7 +15,7 @@ body {
 
 h1,
 label,
-input {
+input{
     margin: 0;
     padding: .3rem;
     color: var(--fondo);
@@ -66,9 +66,6 @@ div {
     padding: 2.5rem;
     display: flex;
     flex-direction: column;
-    
-    
-    
 }
 
 .form input {
@@ -87,7 +84,17 @@ div {
 .caja{
     padding: 1rem;
 }
-
+.icono-usuario{
+    width: 2rem;
+    height: 2rem;
+    padding: .5rem;
+}
+.a{
+    padding: 1rem;
+    color: var(--fondo);
+    display: flex;
+    align-items: center;
+}
 button {
     padding: 1.5rem 9rem;
     border: none;
@@ -98,7 +105,6 @@ button {
     -webkit-box-shadow: 0px 26px 17px -19px rgba(120, 120, 120, 0.8);
     -moz-box-shadow: 0px 26px 17px -19px rgba(120, 120, 120, 0.8);
     box-shadow: 0px 26px 17px -19px rgba(120, 120, 120, 0.8);
-
 }
 
 .boton {
