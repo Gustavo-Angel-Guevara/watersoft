@@ -1,6 +1,7 @@
 :root {
     --principal: #00A3FF;
     --fondo: #f1f1f1;
+    --negro: #424141;
 }
 
 html {
@@ -12,7 +13,10 @@ body {
     font-size: 1.6rem;
     font-family: 'Source Sans Pro', sans-serif;
 }
-
+a{
+    text-decoration: none;
+    color: var(--fondo);
+}
 h1,
 label,
 input{
@@ -95,7 +99,7 @@ div {
     display: flex;
     align-items: center;
 }
-button {
+button .boton-a {
     padding: 1.5rem 9rem;
     border: none;
     border-radius: 1rem;
@@ -107,10 +111,43 @@ button {
     box-shadow: 0px 26px 17px -19px rgba(120, 120, 120, 0.8);
 }
 
-.boton {
+.texto{
+    margin: 1rem;
+    padding: 2rem;
+    color: var(--fondo);
+    text-align: justify;
+}
+
+.boton  {
     margin-top: 3rem;
     border-radius: 1rem;
     font-size: 2rem;
     font-weight: 700;
 }
+.contenedor-menu{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
 
+.opcion{
+    background-color: var(--fondo);
+    padding: 5rem;
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+    margin-bottom: 1rem;
+    border:var(--negro) solid .1rem;
+    border-radius: 1rem;
+}
+
+a :hover{
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.024);
+    border: .2rem solid #f1f1f1;
+}

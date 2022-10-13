@@ -1,0 +1,23 @@
+{
+  "name": "watersoft",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gustavo-Angel-Guevara/watersoft.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gustavo-Angel-Guevara/watersoft/issues"
+  },
+  "homepage": "https://github.com/Gustavo-Angel-Guevara/watersoft#readme",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}
