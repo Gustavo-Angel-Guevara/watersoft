@@ -16,4 +16,12 @@ conection.connect(function(error){
     console.log('Conexión');
 });
 
+conection.query('SELECT * FROM usuario', (error, row) => {
+    if(error) throw error
+    console.log('Datos:');
+    console.log(row);
+    console.log('Cantidad de usuarios:');
+    console.log(row.length);
+});
+
 conection.end();
