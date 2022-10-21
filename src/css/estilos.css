@@ -39,14 +39,14 @@ div {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 4rem;
-    padding-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: .5rem;
 }
 
 .ajustar-icono {
     color: var(--fondo);
-    width: 18rem;
-    height: 16rem;
+    width: 15rem;
+    height: 12rem;
 }
 
 .fondo {
@@ -68,7 +68,7 @@ div {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
-    padding: 2.5rem;
+    padding: 0 1rem;
     display: flex;
     flex-direction: column;
 }
@@ -79,7 +79,7 @@ div {
     margin: .5rem
 }
 .etiqueta{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .tama-caja{
     border-color: var(--fondo);
@@ -93,6 +93,9 @@ div {
     width: 2rem;
     height: 2rem;
     padding: .5rem;
+}
+*::-webkit-input-placeholder {
+    font-size: 1.2rem;
 }
 .a{
     padding: 1rem;
@@ -119,7 +122,7 @@ button{
 }
 
 .boton  {
-    margin-top: 3rem;
+    margin-top: 1rem;
     border-radius: 1rem;
     font-size: 2rem;
     font-weight: 700;
@@ -134,7 +137,9 @@ button{
     justify-content: space-evenly;
     
 }
-
+.espacio-icono{
+    padding-right: 1rem;
+}
 .opcion{
     background-color: var(--fondo);
     padding: 5rem;
@@ -155,11 +160,11 @@ a :hover{
     text-align: center;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    font-size: 10rem;
+    font-size: 5rem;
 
 }
 .conteneder-inicio{
-    padding: 2.5rem;
+    padding: 2rem;
 }
 .centrar-btn{
     display: flex;

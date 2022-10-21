@@ -1,5 +1,7 @@
 const mysql = require('mysql')
 
+
+
 const conection = mysql.createConnection({
     host: 'localhost',
     user:'root',
@@ -23,5 +25,8 @@ conection.query('SELECT * FROM usuario', (error, row) => {
     console.log('Cantidad de usuarios:');
     console.log(row.length);
 });
+
+
+
 
 conection.end();
