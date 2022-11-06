@@ -20,33 +20,35 @@
     <main class="fondo contenedor-todo">
         <section class="contendor-todo">
             <div class="icono">
-                
                 <ion-icon class="ajustar-icono" name="water-outline"></ion-icon>
             </div>
-            <form class="form" onsubmit="event.preventDefault();">
+            <form class="form" id="GuardarRegistro">
                 <h1 class="titulo">Registro de Usuario</h1>
                 <label class="etiqueta" for="">Nombre de Usuario:</label>
-                <input class="tama-caja caja" id="nombre" type="text" placeholder="Nombre de Usuario" />
+                <input class="tama-caja caja" type="text" placeholder="Nombre de Usuario"  id="usuario"/>
                 <label class="etiqueta" for="">Contraseña:</label>
-                <input class="tama-caja caja" id="contra" type="password" placeholder="Contraseña" />
+                <input class="tama-caja caja" type="password" placeholder="Contraseña" id="psw"/>
 
                 <label class="etiqueta" for="">¿Quién se esta registrando?</label>
                 
                 <ion-item color="none">
-                    <ion-radio color="light" slot="start"></ion-radio>
+                    <input color="light" type="radio" name="tipoUsuario" id="admin" value="Administrador">Administrador<br> 
                     <ion-label color="light" >Administrador</ion-label>
                 </ion-item>
                 <ion-item  color="none">
-                    <ion-radio color="light" slot="start"></ion-radio>
+                    <input color="light" type="radio" name="tipoUsuario" id="tecnico" value="Tecnico">Tecnico<br>
                     <ion-label color="light">Técnico</ion-label>
                 </ion-item>
-                <a class="a espacio-icono" href="login.html"><ion-icon name="person-circle-outline"></ion-icon>Ya tengo cuenta</a>
-                <button class="boton" type="submit">Registrarse</button>
                 
+                
+                
+                <button class="boton" onclick="presentAlert()" type="submit">Registrarse</button>
             </form>
         </section>
 
     </main>
+    <script src="../controllers/Front/Registro.js"></script>
+    
 </body>
 <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
 <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>

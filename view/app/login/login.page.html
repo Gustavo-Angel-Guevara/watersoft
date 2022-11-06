@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="mycolor">
+    <ion-title>Inicia Seción</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <div class="centrar">
+      <ion-icon class="icono" name="water-outline"></ion-icon>
+      <h1 class="titulo">WaterSoft</h1>
+    </div>
+  </div>
+  <form [formGroup]="formularioLogin">
+    <ion-item>
+      <ion-label position="floating">Usuario:</ion-label>
+      <ion-input formControlName="usuario"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Contraseña:</ion-label>
+      <ion-input formControlName="password" type="password"></ion-input>
+    </ion-item>
+    <ion-list>
+
+      <div class="contenedor-icono-a icono-a">
+        <ion-icon class="" name="person"></ion-icon>
+        <button class="btn">
+          <a (click)="crearCuenta()" class="a">No tengo cuenta</a>
+        </button>
+      </div>
+      <div class="separar centrar">
+        <ion-button (click)="iniciarSecion()">Ingresar</ion-button>
+      </div>
+    </ion-list>
+  
+  </form>
+  
+</ion-content>

@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="mycolor">
+    <ion-title>Nuevo Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <div class="centrar">
+      <ion-icon class="icono" name="water-outline"></ion-icon>
+      <h1 class="titulo">WaterSoft</h1>
+    </div>
+  </div>
+
+  <form [formGroup]="formularioRegistro" (keyup.enter)="guardar()">
+    <ion-item>
+      <ion-label position="floating">Usuario:</ion-label>
+      <ion-input formControlName="nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Contraseña:</ion-label>
+      <ion-input formControlName="password" type="password"></ion-input>
+    </ion-item>
+    <!-- <ion-item>
+      <ion-label position="floating">Confirmar Contraseña:</ion-label>
+      <ion-input formControlName="confirmarPassword" type="password"></ion-input>
+    </ion-item> -->
+    <ion-radio-group value="strawberries">
+      <ion-item *ngFor="let valor of tipoUsuario">
+        <ion-label>{{valor}}</ion-label>
+        <ion-radio slot="end"  value="{{valor}}"></ion-radio>
+      </ion-item>
+      
+    </ion-radio-group>
+
+    <div class="contenedor-icono-a icono-a">
+      <ion-icon class="" name="person"></ion-icon>
+      <button class="btn">
+        <a (click)="login()" class="a">Ya tengo cuenta</a>
+      </button>
+    </div>
+    <div class="separar centrar">
+      <ion-button (click)="guardar()">Registrarse</ion-button>
+    </div>
+  </form>
+</ion-content>
